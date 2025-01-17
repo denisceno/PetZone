@@ -3,7 +3,6 @@ The project is structured with multiple apps, each responsible for a specific fu
 
 2. Models
 The project includes 3 models:
-
 Model 1 (CRUD functionality): Full create, read, update, and delete operations are supported.
 Model 2 (CRUD functionality): Also fully supports create, read, update, and delete operations.
 Model 3: Handles a different set of data but may not include full CRUD operations.
