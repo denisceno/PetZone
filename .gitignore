@@ -1,0 +1,7 @@
+env_pezone
+.idea
+*.pyc
+*.iml
+*.xml
+
+.env
