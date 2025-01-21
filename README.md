@@ -6,13 +6,13 @@ The project is structured with multiple apps, each responsible for a specific fu
 
 The project features three primary models, each incorporating multiple foreign key relationships to ensure robust data structure and seamless integration between entities.
 
-## Model Products (CRUD functionality):
+## Products Model (CRUD functionality):
 Full create, read, update, and delete operations are supported.
 
-## Model Blog (CRUD functionality):
+## Blog Model (CRUD functionality):
 **Fully supports create, read, update, and delete operations**, with access granted to both the **admin** and the **user who created the post**.
 
-## Model Appointments:
+## Appointments Model :
 Handles a different set of data but may not include full CRUD operations.
 
 # "Secure Administrative Functions with Decorators"
