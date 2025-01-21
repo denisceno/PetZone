@@ -1,7 +1,5 @@
 from django.shortcuts import render, redirect
-from products.models import Products
 from .forms import AppointmentForm
-from django.http import HttpResponse
 from .models import Appointment
 import smtplib
 

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Products,AnimalType,AgeCategory
+from .models import Products,AnimalType,AgeCategory,Orders,Tag
 
 # Register your models here.
 class AnimalTypeAdmin(admin.ModelAdmin):
@@ -11,3 +11,5 @@ class AgeCategoryAdmin(admin.ModelAdmin):
 admin.site.register(Products)
 admin.site.register(AnimalType,AnimalTypeAdmin)
 admin.site.register(AgeCategory,AgeCategoryAdmin)
+admin.site.register(Orders)
+admin.site.register(Tag)
