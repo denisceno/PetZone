@@ -1,81 +1,115 @@
 <head>
-  <style>
-    /* Custom CSS for navbar background and text color */
-    .navbar-custom {
-      background-color: #4caf50;  /* Custom red background */
-    }
-    
-    .navbar-custom .nav-link {
-      color: #ffffff;  /* Custom white text color */
-    }
-
-    .navbar-custom .nav-link:hover {
-      color: #037e26;  /* Change text color on hover */
-    }
-  </style>
+  <head>
+    <style>
+      /* Custom CSS for navbar background and text color */
+      .navbar-custom {
+        background-color: #4caf50; /* Custom green background */
+        position: fixed; /* Fix the navbar at the top */
+        top: 0; /* Align it to the top of the page */
+        width: 100%; /* Ensure it spans the full width of the viewport */
+        z-index: 1030; /* Set a high z-index to ensure it appears above other content */
+      }
+  
+      .navbar-custom .nav-link {
+        color: #ffffff; /* Custom white text color */
+      }
+  
+      .navbar-custom .nav-link:hover {
+        color: #037e26; /* Change text color on hover */
+      }
+  
+      /* Add padding to the body to avoid content overlapping the navbar */
+      body {
+        padding-top: 56px; /* Adjust based on the height of the navbar */
+      }
+    </style>
+  </head>
+  
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="{% url 'home-page' %}"> <span style="color: rgb(7, 7, 7);">Pet</span><span style="color: #f70000;">Zone</span></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="d-flex justify-content-center flex-grow-1">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            {% if user.is_superuser %}
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'all-products' %}">All Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'orders' %}">Orders</a>
-              </li>
-            {% else %}
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="{% url 'products-home' %}">Products</a>
-              </li>
-            {% endif %}
-            {% if user.is_superuser %}
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'appointment-list' %}">Appointment list</a>
-              </li>
-            {% else %}
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'appointment-home' %}">Appointment</a>
-              </li>
-            {% endif %}
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'about-us' %}">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'blog_list' %}">Blog</a>
-            </li>
-          </ul>
-        </div>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          {% if user.is_authenticated %}
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{% url 'logout' %}">Logout</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{% url 'admin:index' %}">Hi <b>{{ user.username }}</b></a>
-            </li>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'home-page' %}">
+      <span style="color: rgb(7, 7, 7)">Pet</span
+      ><span style="color: #f70000">Zone</span></a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="d-flex justify-content-center flex-grow-1">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          {% if user.is_superuser %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'all-products' %}">All Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'orders' %}">Orders</a>
+          </li>
           {% else %}
-            <li class="nav-item">
-
-              <a href="{% url 'login' %}" class="btn btn-danger" aria-current="page">Join Us</a>
-            </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="{% url 'products-home' %}"
+              >Products</a
+            >
+          </li>
+          {% endif %} {% if user.is_superuser %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'appointment-list' %}"
+              >Appointment list</a
+            >
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'appointment-home' %}"
+              >Appointment</a
+            >
+          </li>
           {% endif %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about-us' %}">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'blog_list' %}">Blog</a>
+          </li>
         </ul>
       </div>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="{% url 'logout' %}"
+            >Logout</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="{% url 'admin:index' %}"
+            >Hi <b>{{ user.username }}</b></a
+          >
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a href="{% url 'login' %}" class="btn btn-danger" aria-current="page"
+            >Join Us</a
+          >
+        </li>
+        {% endif %}
+      </ul>
     </div>
+  </div>
 </nav>
