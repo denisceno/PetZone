@@ -61,3 +61,10 @@ tr:hover {
 .back-button a:hover {
   text-decoration: underline;
 }
+.navbar-custom .appointment-list-link {
+  color: #e63946 !important; /* Red color */
+}
+
+.navbar-custom .appointment-list-link:hover {
+  color: #b22222 !important; /* Darker red on hover */
+}

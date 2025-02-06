@@ -109,3 +109,11 @@ body {
     }
   }
   
+  .navbar-custom .appointment-home-link {
+    color: #e63946 !important; /* Red color */
+  }
+  
+  .navbar-custom .appointment-home-link:hover {
+    color: #b22222 !important; /* Darker red on hover */
+  }
+  
