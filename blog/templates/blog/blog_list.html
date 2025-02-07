@@ -82,11 +82,11 @@
     {% include 'navbar.html' %}
 
     <div class="container my-5">
-      <h1 class="text-center mb-4" style="color: #007bff">Adoption Stories</h1>
+      <h1 class="text-center mb-4" style="color: #e63946">Adoption Stories</h1>
 
       {% if user.is_authenticated %}
       <div class="text-center create-button">
-        <a href="{% url 'blog_create' %}" class="btn btn-primary"
+        <a href="{% url 'blog_create' %}" class="btn btn-primary" style="background-color: #e63946;"
           >Add Your Story</a
         >
       </div>

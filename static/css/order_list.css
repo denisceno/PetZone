@@ -6,8 +6,7 @@ body {
 }
 
 header {
-  background-color: #4caf50;
-  color: white;
+  color: #e63946;
   text-align: center;
   padding: 1em;
 }
@@ -28,7 +27,7 @@ td {
 }
 
 th {
-  background-color: #4caf50;
+  background-color: #e63946;
   color: white;
 }
 
@@ -52,7 +51,7 @@ tr:hover {
 }
 
 .back-button a {
-  color: #4caf50;
+  color: #b22222;
   font-size: 16px;
   text-decoration: none;
   font-weight: bold;
