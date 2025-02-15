@@ -1,60 +1,53 @@
 {% load static %}
 <head>
-    <style>
-  
-      /* Custom CSS for navbar background and text color */
-      .navbar-custom {
-        background-color: white; /* Custom green background with transparency */
-        top: 0; /* Align it to the top of the page */
-        width: 100%; /* Ensure it spans the full width of the viewport */
-        z-index: 1030; /* Set a high z-index to ensure it appears above other content */
-        padding: 5px 0; /* Reduce padding for a smaller navbar */
-        font-family: Poppins, sans-serif; /* Use a custom font */
-        font-size: 0.9rem;
-      }
-  
-      .navbar-custom .nav-link {
-        color: black; /* Custom white text color */
-        padding: 8px 12px; /* Adjust padding for smaller links */
+  <style>
+    /* Custom CSS for navbar background and text color */
+    .navbar-custom {
+      background-color: white; /* Custom green background with transparency */
+      top: 0; /* Align it to the top of the page */
+      width: 100%; /* Ensure it spans the full width of the viewport */
+      z-index: 1030; /* Set a high z-index to ensure it appears above other content */
+      padding: 5px 0; /* Reduce padding for a smaller navbar */
+      font-family: Poppins, sans-serif; /* Use a custom font */
+      font-size: 0.9rem;
+    }
 
-        text-transform: uppercase; /* Convert text to uppercase */
-      }
-  
-      .navbar-custom .nav-link:hover {
-        color: #e63946; /* Change text color on hover */
-      }
-  
-      /* Add padding to the body to avoid content overlapping the navbar */
-    
+    .navbar-custom .nav-link {
+      color: black; /* Custom white text color */
+      padding: 8px 12px; /* Adjust padding for smaller links */
 
-  
-      /* Adjust navbar brand size */
-      .navbar-brand img {
-        height: 40px; /* Reduce logo size */
-      }
-  
-      /* Adjust the button size for toggling navbar */
-      .navbar-toggler {
-        padding: 8px 10px; /* Make the toggle button smaller */
-      }
-      .navbar-custom .active-logout {
-    color: #e63946 !important; /* Red color */
-}
+      text-transform: uppercase; /* Convert text to uppercase */
+    }
 
-.navbar-custom .active-logout:hover {
-    color: #b22222 !important; /* Darker red on hover */
-}
-    </style>
+    .navbar-custom .nav-link:hover {
+      color: #e63946; /* Change text color on hover */
+    }
+
+    /* Add padding to the body to avoid content overlapping the navbar */
+
+    /* Adjust navbar brand size */
+    .navbar-brand img {
+      height: 60px; /* Reduce logo size */
+    }
+
+    /* Adjust the button size for toggling navbar */
+    .navbar-toggler {
+      padding: 8px 10px; /* Make the toggle button smaller */
+    }
+    .navbar-custom .active-logout {
+      color: #e63946 !important; /* Red color */
+    }
+
+    .navbar-custom .active-logout:hover {
+      color: #b22222 !important; /* Darker red on hover */
+    }
+  </style>
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container-fluid">
     <a class="navbar-brand" href="{% url 'home-page' %}">
-      <img
-        src="{% static 'images/PetZone_logo.png' %}"
-        alt="PetZone Logo"
-
-      />
+      <img src="{% static 'images/PetZone_logo.png' %}" alt="PetZone Logo" />
       <!-- <span style="color: rgb(7, 7, 7);">Pet</span><span style="color: #ed563b; ">Zone</span> -->
     </a>
 
@@ -74,7 +67,11 @@
         <ul class="navbar-nav mb-2 mb-lg-0">
           {% if user.is_superuser %}
           <li class="nav-item">
-            <a class="nav-link all-products-link" href="{% url 'all-products' %}">All Products</a>
+            <a
+              class="nav-link all-products-link"
+              href="{% url 'all-products' %}"
+              >All Products</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link orders-link" href="{% url 'orders' %}">Orders</a>
@@ -97,20 +94,26 @@
             >
           </li>
           {% endif %} {% if user.is_superuser %}
-          <li class="nav-item" >
-            <a class="nav-link appointment-list-link" href="{% url 'appointment-list' %}"
+          <li class="nav-item">
+            <a
+              class="nav-link appointment-list-link"
+              href="{% url 'appointment-list' %}"
               >Appointment list</a
             >
           </li>
           {% else %}
           <li class="nav-item">
-            <a class="nav-link appointment-home-link" href="{% url 'appointment-home' %}"
+            <a
+              class="nav-link appointment-home-link"
+              href="{% url 'appointment-home' %}"
               >Appointment</a
             >
           </li>
           {% endif %}
           <li class="nav-item">
-            <a class="nav-link about-us-link" href="{% url 'about-us' %}">About Us</a>
+            <a class="nav-link about-us-link" href="{% url 'about-us' %}"
+              >About Us</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link blog-link" href="{% url 'blog_list' %}">Blog</a>
@@ -138,7 +141,7 @@
         {% else %}
         <li class="nav-item">
           <a href="{% url 'login' %}" class="btn btn-danger" aria-current="page"
-            >Join Us</a
+            >Log In</a
           >
         </li>
         {% endif %}
