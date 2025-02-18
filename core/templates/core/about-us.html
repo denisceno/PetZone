@@ -25,32 +25,21 @@
         font-family: Arial, sans-serif;
         background-color: #ebf2ed;
       }
+
       .about-banner {
-        background: url("{% static 'images/about-banner.jpg' %}") center/cover
-          no-repeat;
         height: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: rgb(23, 21, 21);
         text-align: center;
-        filter: brightness(0.8);
-        position: relative;
       }
-      .about-banner::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-      }
+
       .about-banner div {
         z-index: 1;
       }
       .about-banner h1 {
-        font-size: 3rem;
         margin-bottom: 10px;
+        color: #e63946;
       }
       .about-banner p {
         font-size: 1.25rem;
@@ -59,6 +48,10 @@
         padding: 50px 0;
         background-color: #f9f9f9;
       }
+      .my-5 h2 {
+        color: #e63946;
+      }
+
       .team-section h2 {
         color: #e63946;
       }
