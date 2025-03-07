@@ -173,6 +173,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous">
   </script>
+
     <script>
       document.addEventListener('DOMContentLoaded', function () {
           flatpickr("#appointment-date", {
@@ -184,7 +185,7 @@
               dateFormat: "Y-m-d H:i",      // Format compatible with Django
               defaultHour: 9,               // Default start time
               defaultMinute: 0,             // Default minute
-              step: 30,                     // Minute step (30-minute intervals)
+              minuteIncrement: 20 ,         // Minute step (30-minute intervals)
               inline: false,                // Disable inline display of the calendar
               noCalendar: false,            // Keep the calendar visible
               disableMobile: true,          // Disable mobile-specific UI for consistency
@@ -193,6 +194,7 @@
       });
       
         </script>
+
 
   </body>
 </html>
