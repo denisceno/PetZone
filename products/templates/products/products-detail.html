@@ -88,7 +88,7 @@
             Please fill out the form and one of our agents will contact you for
             the delivery.
           </h4>
-          <form method="post" action="{% url 'products-detail' product.id %}">
+          <form id="order-form" method="post" action="{% url 'products-detail' product.id %}">
             {% csrf_token %} {{ form_orders.as_p }}
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
@@ -100,5 +100,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="{% static 'js/products_detail.bundle.js' %}"></script>
   </body>
 </html>

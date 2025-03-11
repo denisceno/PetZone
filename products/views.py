@@ -25,7 +25,7 @@ def email_s(user_email, user_name, phone_number):
             connection.sendmail(
                 from_addr=my_email,
                 to_addrs=user_email,
-                msg=f"Subject: Appointment Confirmation\n\nHello {user_name},\n\n{email_txt}"
+                msg=f"Subject: Order Confirmation\n\nHello {user_name},\n\n{email_txt}"
             )
     except Exception as e:
         print(f"Error sending email: {e}")

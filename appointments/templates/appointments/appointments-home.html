@@ -19,139 +19,140 @@
     />
     <style>
       body {
-    font-family: "Arial", sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h2 {
-    color: #e63946;
-    font-weight: bold;
-    text-align: center;
-    margin: 20px;
-    font-size: 2.5rem;
-  }
-  .description-paragraph {
-    color: black;
-    font-size: 1.25rem;
-    text-align: center;
-    margin-bottom: 20px;
-    padding-bottom: 30px;
-  }
-  
-.container {
-    margin-top: 30px;
-    max-width: 400px !important;
-    width: 90% !important;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-    padding: 15px !important;
-    transition: all 0.3s ease;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container:hover {
-    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
-  }
-  
-  form {
-    margin-bottom: 20px;
-  }
-  
-  input[type="submit"] {
-    width: 50% !important;
-    padding: 10px;
-    font-size: 1rem;
-    background-color: #198754;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-align: center;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #155d43;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  select {
-    width: 80%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-    text-align: center;
-  }
-  
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="password"]:focus,
-  select:focus {
-    border-color: #198754;
-    outline: none;
-  }
-  
-  .btn.btn-calculate {
-    color: white;
-    background-color: #198754;
-    border-color: #198754;
-    padding: 12px 25px;
-    font-size: 1rem;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn.btn-calculate:hover {
-    background-color: #155d43;
-  }
-  
-  @media (max-width: 768px) {
-    .container {
-      margin-top: 20px;
-      padding: 15px;
-      max-width: 280px !important;
-    }
-  
-    h2 {
-      font-size: 1.5rem;
-    }
-  
-    .btn-success,
-    .btn.btn-calculate {
-      width: auto;
-      padding: 10px 20px;
-      font-size: 1rem;
-    }
-  }
-  
-  .navbar-custom .appointment-home-link {
-    color: #e63946 !important; /* Red color */
-  }
-  
-  .navbar-custom .appointment-home-link:hover {
-    color: #b22222 !important; /* Darker red on hover */
-  }
-  
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      h2 {
+        color: #e63946;
+        font-weight: bold;
+        text-align: center;
+        margin: 20px;
+        font-size: 2.5rem;
+      }
+      .description-paragraph {
+        color: black;
+        font-size: 1.25rem;
+        text-align: center;
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+      }
+
+      .container {
+        margin-top: 30px;
+        max-width: 400px !important;
+        width: 90% !important;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+        padding: 15px !important;
+        transition: all 0.3s ease;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container:hover {
+        box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      form {
+        margin-bottom: 20px;
+      }
+
+      input[type="submit"] {
+        width: 50% !important;
+        padding: 10px;
+        font-size: 1rem;
+        background-color: #198754;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-align: center;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #155d43;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      select {
+        width: 80%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+        text-align: center;
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="password"]:focus,
+      select:focus {
+        border-color: #198754;
+        outline: none;
+      }
+
+      .btn.btn-calculate {
+        color: white;
+        background-color: #198754;
+        border-color: #198754;
+        padding: 12px 25px;
+        font-size: 1rem;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn.btn-calculate:hover {
+        background-color: #155d43;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          margin-top: 20px;
+          padding: 15px;
+          max-width: 280px !important;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        .btn-success,
+        .btn.btn-calculate {
+          width: auto;
+          padding: 10px 20px;
+          font-size: 1rem;
+        }
+      }
+
+      .navbar-custom .appointment-home-link {
+        color: #e63946 !important; /* Red color */
+      }
+
+      .navbar-custom .appointment-home-link:hover {
+        color: #b22222 !important; /* Darker red on hover */
+      }
     </style>
   </head>
   <body>
-    {% include 'navbar.html' %}
-    {% if user.is_authenticated %}
+    {% include 'navbar.html' %} {% if user.is_authenticated %}
     <h2>Schedule an Appointment</h2>
     <div class="description-paragraph">
-          <p>Ensure your furry friend gets the best care!</p>
-      <p>Fill out the form below to schedule an appointment with our experienced veterinarian and keep your pet happy and healthy.</p>
+      <p>Ensure your furry friend gets the best care!</p>
+      <p>
+        Fill out the form below to schedule an appointment with our experienced
+        veterinarian and keep your pet happy and healthy.
+      </p>
     </div>
 
     <div class="container">
@@ -163,87 +164,18 @@
     </div>
     {% else %}
     <div class="text-center mt-5">
-        <h2>Join Us to Schedule an Appointment with Our Veterinarian </h2>
-        <a href="{% url 'login' %}" class="btn btn-calculate mt-3">Join Now</a>
+      <h2>Join Us to Schedule an Appointment with Our Veterinarian</h2>
+      <a href="{% url 'login' %}" class="btn btn-calculate mt-3">Join Now</a>
     </div>
     {% endif %}
 
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous">
-  </script>
-
-
-  
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-          flatpickr("#appointment-date", {
-              enableTime: true,             // Enable time selection
-              time_24hr: true,              // Use 24-hour format
-              minDate: "today",             // Disable past dates
-              minTime: "09:00",             // Earliest appointment time
-              maxTime: "17:00",             // Latest appointment time
-              dateFormat: "Y-m-d H:i",      // Format compatible with Django
-              defaultHour: 9,               // Default start time
-              defaultMinute: 0,             // Default minute
-              minuteIncrement: 20 ,         // Minute step (30-minute intervals)
-              inline: false,                // Disable inline display of the calendar
-              noCalendar: false,            // Keep the calendar visible
-              disableMobile: true,          // Disable mobile-specific UI for consistency
-          });
-      });
-      
-        </script>
-
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-      document.getElementById("appointment-form").addEventListener("submit", function (event) {
-          event.preventDefault();  // Stop form submission
-
-          // Access the form field value dynamically
-          const name = document.getElementById("id_name").value;  // Get the name value from the form
-          const email = document.getElementById("id_email").value;
-          const phone = document.getElementById("id_phone").value;
-
-          // Show confirmation dialog
-          Swal.fire({
-              title: "Confirm Appointment",
-              html: "Ensure your information is correct before scheduling the appointment.<br>Name: " + name + "<br>Email: " + email + "<br>Phone: " + phone,
-              icon: "info",
-              showCancelButton: true,
-              confirmButtonColor: "#3085d6",
-              cancelButtonColor: "#d33",
-              confirmButtonText: "Yes, schedule it!"
-          }).then((result) => {
-              if (result.isConfirmed) {
-                  // Show success message before submitting the form
-                  Swal.fire({
-                      position: "center",
-                      icon: "success",
-                      title: "Your appointment has been scheduled successfully!",
-                      showConfirmButton: true  // Show the confirm button so it stays open
-                  });
-
-                  // Delay form submission so the success message is shown before submitting
-                  setTimeout(function() {
-                      event.target.submit();  // Submit the form after 1 second
-                  }, 3000);  // Adjust the delay as needed (1000ms = 1 second)
-              }
-          });
-      });
-  });
-</script>
-
-
-
-
-
-
-
-
-
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="{% static 'js/appointments_home.bundle.js' %}"></script>
+    
   </body>
 </html>

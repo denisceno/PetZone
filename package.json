@@ -1,0 +1,29 @@
+{
+  "name": "petzone",
+  "version": "1.0.0",
+  "description": "The project is structured with multiple apps, each responsible for a specific functionality, ensuring a modular and scalable architecture.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisceno/PetZone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denisceno/PetZone/issues"
+  },
+  "homepage": "https://github.com/denisceno/PetZone#readme",
+  "keywords": [],
+  "dependencies": {
+    "flatpickr": "^4.6.13",
+    "sweetalert2": "^11.6.13"
+  },
+  "devDependencies": {
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  }
+}
