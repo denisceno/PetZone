@@ -1,18 +1,16 @@
-import flatpickr from "flatpickr";
 import Swal from "sweetalert2";
 
 document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("order-form")
     .addEventListener("submit", function (event) {
-      event.preventDefault(); // Stop form submission initially
+      event.preventDefault();
 
       // Access the form field values dynamically
       const name = document.getElementById("id_name").value;
       const email = document.getElementById("id_email").value;
       const phone = document.getElementById("id_phone").value;
 
-      // Show the confirmation dialog
       Swal.fire({
         title: "Confirm Appointment",
         html:
@@ -29,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
         confirmButtonText: "Yes, place order!",
       }).then((result) => {
         if (result.isConfirmed) {
-          // After confirmation, submit the form manually
           event.target.submit();
         }
       });

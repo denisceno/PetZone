@@ -1,18 +1,33 @@
 {% load static %}
 <head>
-  <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
 
   <style>
+html, body {
+  margin: 0;
+  padding: 20px;
+}
+
+ 
     /* Custom CSS for navbar background and text color */
     .navbar-custom {
-      background-color: white; /* Custom green background with transparency */
-      top: 0; /* Align it to the top of the page */
-      width: 100%; /* Ensure it spans the full width of the viewport */
-      z-index: 1030; /* Set a high z-index to ensure it appears above other content */
-      padding: 5px 0; /* Reduce padding for a smaller navbar */
-      font-family: Poppins, sans-serif; /* Use a custom font */
-      font-size: 0.9rem;
-    }
+    position: sticky;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 20px;
+    z-index: 1030;
+    border-radius: 50px;
+    margin: 0 50px; /* Keep this for outer spacing */
+    padding: 5px 50px; /* Inner padding */
+    font-family: Poppins, sans-serif;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden; /* Prevent overflow */
+}
+
+
 
     .navbar-custom .nav-link {
       color: black; /* Custom white text color */
