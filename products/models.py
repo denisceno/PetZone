@@ -1,7 +1,6 @@
 from django.db import models
 import uuid
 
-# Create your models here.
 
 class AnimalType(models.Model):
     animal_type = models.CharField(max_length=200)
