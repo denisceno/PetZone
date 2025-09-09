@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const phone = document.getElementById("id_phone").value;
 
       Swal.fire({
-        title: "Confirm Appointment",
+        title: "Confirm Order",
         html:
           "Ensure your information is correct before placing the order.<br>Name: " +
           name +
