@@ -24,14 +24,14 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="{% static 'css/home-page.css' %}" />
+    <link rel="stylesheet" href="{% static 'core/css/home-page.css' %}" />
   </head>
   <body>
     {% include 'navbar.html' %}
 
     <div class="video-container">
       <video autoplay loop muted playsinline class="hero-video">
-        <source src="{% static 'videos/pet_food.mp4' %}" type="video/mp4" />
+        <source src="{% static 'core/videos/pet_food.mp4' %}" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div class="video-overlay">

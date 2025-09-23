@@ -1,0 +1,132 @@
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #ffffff;
+
+
+  }
+
+  .navbar-custom .home-link {
+    color: #e63946 !important; /* Red color */
+  }
+
+  .navbar-custom .home-link:hover {
+    color: #b22222 !important; /* Darker red on hover */
+  }
+
+  .navbar .nav-link:hover {
+    color: #e63946 !important; /* Optional: Change color on hover */
+  }
+
+
+  .promotions h2 {
+    font-size: 2.25rem;
+    padding: 20px 0;
+    color: #e63946;
+    font-weight: 600;
+  }
+  .promotions p {
+    font-size: 1.125rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  .promotions .btn-danger {
+    padding: 12px 30px;
+    font-size: 1.125rem;
+    border-radius: 40px;
+  }
+  .team-section {
+    padding: 10px 0;
+    background-color: #f9f9f9;
+  }
+
+  .team-member {
+    text-align: center;
+  }
+  .team-member img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .team-member h5 {
+    margin-top: 15px;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  .team-member p {
+    color: #777;
+  }
+
+  .products-section .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .products-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  .products-section .card img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  .products-section .card-body {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+  }
+  .products-section .card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #333;
+  }
+  .products-section .card-text {
+    font-size: 1.125rem;
+    color: #e63946;
+    font-weight: bold;
+  }
+
+  /* Video Container Adjustments */
+.video-container {
+  position: absolute; /* Change to absolute to pin it to the top */
+  top: 0; /* Ensure it starts at the top */
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1; /* Below navbar */
+}
+
+/* Hero Video */
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay Text */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  z-index: 2; /* Above video, below navbar */
+  background: rgba(2, 0, 14, 0.7);
+}
+
+/* Ensure content below video isn’t overlapped */
+.promotions {
+  position: relative;
+  z-index: 3;
+  margin-top: 100vh; /* Push content below the video height */
+}
