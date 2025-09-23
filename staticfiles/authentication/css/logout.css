@@ -1,0 +1,10 @@
+.text-success {
+  font-size: 2.5rem;
+  color: green !important;
+}
+.lead {
+  font-size: 1.5rem;
+  padding: 30px 0;
+  color: #e63946;
+  font-weight: bold;
+}

@@ -1,0 +1,8 @@
+.container {
+  margin-top: 40px;
+  padding: 20px;
+}
+.text-primary {
+  text-align: center;
+  color: #e63946 !important;
+}
