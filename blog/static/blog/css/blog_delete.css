@@ -1,0 +1,74 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background: linear-gradient(120deg, #fdfbfb, #ebedee);
+  color: #495057;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #dc3545;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #495057;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-danger {
+  background: linear-gradient(90deg, #dc3545, #a71d2a);
+  color: white;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(90deg, #a71d2a, #801520);
+}
+
+.btn-secondary {
+  background: linear-gradient(90deg, #6c757d, #495057);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(90deg, #495057, #343a40);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.navbar-custom .blog-link {
+  color: #e63946 !important; /* Red color */
+}
+
+.navbar-custom .blog-link:hover {
+  color: #b22222 !important; /* Darker red on hover */
+}

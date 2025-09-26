@@ -1,0 +1,64 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.story-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.story-card img {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.story-card .card-body {
+  text-align: left;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-button {
+  margin-bottom: 30px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.full-content {
+  display: none;
+  color: #495057;
+}
+
+.card-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+.navbar-custom .blog-link {
+  color: #e63946 !important; /* Red color */
+}
+
+.navbar-custom .blog-link:hover {
+  color: #b22222 !important; /* Darker red on hover */
+}

@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.post-detail {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.post-detail h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.post-detail p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.post-detail img {
+  width: 300px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  object-fit: cover; /* Ensures the image covers the area */
+  display: block;
+  float: left;
+  padding: 10px;
+}
+.navbar-custom .blog-link {
+  color: #e63946 !important; /* Red color */
+}
+
+.navbar-custom .blog-link:hover {
+  color: #b22222 !important; /* Darker red on hover */
+}
