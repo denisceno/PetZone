@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 800px;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #343a40;
+}
+
+form {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.cancel-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.cancel-link a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.cancel-link a:hover {
+  text-decoration: underline;
+}
+.navbar-custom .nav-item .all-products-link {
+  color: #e63946 !important; /* Red color */
+}
+
+.navbar-custom .nav-item .all-products-link:hover {
+  color: #b22222 !important; /* Darker red on hover */
+}

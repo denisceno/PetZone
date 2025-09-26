@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.form-container {
+  padding: 20px;
+  border-left: 1px solid #ddd;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-container form .form-control {
+  margin-bottom: 15px;
+}
+
+.navbar-custom .products-link {
+  color: #e63946 !important; /* Red color */
+}
+
+.navbar-custom .products-link:hover {
+  color: #b22222 !important; /* Darker red on hover */
+}
+.navbar-custom .nav-item .all-products-link {
+  color: #e63946 !important; /* Red color */
+}
+
+.navbar-custom .nav-item .all-products-link:hover {
+  color: #b22222 !important; /* Darker red on hover */
+}

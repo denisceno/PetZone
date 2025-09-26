@@ -1,0 +1,58 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.half {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.left {
+  background-color: #f8f9fa;
+}
+
+.right {
+  background-color: #e9ecef;
+}
+
+.half a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  max-width: 96%;
+  max-height: 54vh;
+  height: auto;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0;
+}
+.navbar-custom .products-link {
+  color: #e63946 !important; /* Red color */
+}
+
+.navbar-custom .products-link:hover {
+  color: #b22222 !important; /* Darker red on hover */
+}

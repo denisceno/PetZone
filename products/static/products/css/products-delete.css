@@ -1,0 +1,7 @@
+.navbar-custom .nav-item .all-products-link {
+  color: #e63946 !important; /* Red color */
+}
+
+.navbar-custom .nav-item .all-products-link:hover {
+  color: #b22222 !important; /* Darker red on hover */
+}
