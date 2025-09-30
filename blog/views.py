@@ -14,9 +14,11 @@ def blog_detail(request, id):
     template_name = "blog/blog_details.html"
     post = get_object_or_404(BlogPost, id=id)
     is_author = post.author == request.user
+    is_superuser = request.user.is_superuser
     context = {
         'post': post,
         'is_author': is_author,
+        'is_superuser': is_superuser
     }
     return render(request, template_name, context)
 
@@ -39,7 +41,7 @@ def blog_create(request):
 @login_required
 def blog_edit(request, id):
     post = get_object_or_404(BlogPost, id=id)
-    if request.user != post.author:
+    if request.user != post.author :
         messages.error(request, "You are not authorized to edit this post.")
         return redirect('blog_detail', id=id)
 
@@ -59,7 +61,7 @@ def blog_edit(request, id):
 def blog_delete(request, id):
     post = get_object_or_404(BlogPost, id=id)
 
-    if request.user != post.author:
+    if request.user != post.author and not request.user.is_superuser:
         messages.error(request, "You are not authorized to delete this post.")
         return redirect('blog_detail', id=id)
 

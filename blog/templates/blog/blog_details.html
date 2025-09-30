@@ -19,6 +19,8 @@
       <a href="{% url 'blog_edit' id=post.id %}" class="btn btn-primary"
         >Update</a
       >
+      {% endif %}
+      {% if is_author or is_superuser  %}
       <a href="{% url 'blog_delete' id=post.id %}" class="btn btn-danger"
         >Delete</a
       >

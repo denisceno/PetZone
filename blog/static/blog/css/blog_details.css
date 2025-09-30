@@ -12,6 +12,8 @@ body {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .post-detail h1 {
@@ -32,6 +34,12 @@ body {
   float: left;
   padding: 10px;
 }
+.post-detail::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .navbar-custom .blog-link {
   color: #e63946 !important; /* Red color */
 }
